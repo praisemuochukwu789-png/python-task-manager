@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f1e5d0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#todo-ctn, input, #add-btn{ 
+    background-color: #183521f3;
+}
+#todo-ctn {
+    width: 500px;
+    border-radius: 8px;
+    padding:30px 20px;
+}
+.txt-color {
+    color: #f1e5d0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+h1 {
+    font-size: 23px;
+    width: max-content;
+    background-color: transparent;
+
+}
+h1 + div {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 10px;
+}
+#input_value {
+    width: 400px;
+    height: 30px;
+    background-color: #183521f3;
+    outline: none;
+    border: 1px solid #f1e5d0;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+button:hover {
+    cursor: pointer;
+}
+#add-btn {
+    width: 50px;
+    height: 42px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #f1e5d0;
+}
+.lists {
+    border: 1px solid rgba(255, 166, 0, 0.911);
+    width: 400px;
+    height: 30px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px 0;
+    gap: 60px;
+}
+.btn-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.btn-wrapper button{
+    margin: 0px 5px;
+}
+.edit-btn, .complete-btn, .del-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.edit-btn {
+    color: green;
+    background-color: none;
+}
+.complete-btn {
+    color: rgba(255, 166, 0, 0.911);
+}
+.del-btn {
+    color: red;
+}

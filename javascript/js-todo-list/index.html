@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="todo-ctn">
+        <h1 class="txt-color">Create your Todo-List</h1>
+        <div>
+            <input value="What are your task for today?" class="txt-color" type="text" id="input_value">
+            <button class="txt-color" id="add-btn" onclick="createList()">Add</button>
+        </div>
+
+        <div class="lists">
+            <span class="txt-color">Design a website</span>
+            <span class="btn-wrapper">
+                <button class="edit-btn" onclick="editTask(this)">EDIT</button>
+                <button class="complete-btn" onclick="completeTask(this)">COMPLETED</button>
+                <button class="del-btn" onclick="deleteTask(this)">DELETE</button>
+            </span>
+        </div>
+
+        <div class="lists">
+            <span class="txt-color">Develop a website</span>
+            <span class="btn-wrapper">
+                <button class="edit-btn" onclick="editTask(this)">EDIT</button>
+                <button class="complete-btn" onclick="completeTask(this)">COMPLETED</button>
+                <button class="del-btn" onclick="deleteTask(this)">DELETE</button>
+            </span>
+        </div>
+
+        <div class="lists">
+            <span class="txt-color">Publish a website</span>
+            <span class="btn-wrapper">
+                <button class="edit-btn" onclick="editTask(this)">EDIT</button>
+                <button class="complete-btn">COMPLETED</button>
+                <button class="del-btn" onclick="deleteTask(this)">DELETE</button>
+            </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
